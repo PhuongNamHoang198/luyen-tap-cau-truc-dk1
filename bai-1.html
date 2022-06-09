@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 1</title>
+</head>
+<body>
+<input type="number" id="number1">
+<input type="number" id="number2">
+<button onclick="nhapdulieu()">nhap du lieu</button>
+<script>
+     function nhapdulieu() {
+         let a = document.getElementById("number1").value;
+         let b = document.getElementById("number2").value;
+         // let a =  prompt('number')
+         //   let b =  prompt( 'nhap vao so b')
+         a = parseInt(a);
+         b = parseInt(b);
+         if (a % b == 0) {
+             document.write('a chia het cho b');
+         } else {
+             document.write('a khong chia het cho b');
+         }
+     }
+</script>
+</body>
+</html>
